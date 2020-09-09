@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Share your recipe</title>
+</head>
+
+<body>
+  <header>
+    <div class="recept_background">
+      <h1>Deel je recept:</h1>
+    </div>
+  </header>
+  <div class="container">
+    <form name="contact" method="POST" data-netlify="true">
+
+      <label for="name"></label>
+      <input class="width_full" type="text" name="name" placeholder="Naam...">
+
+      <label for="email"></label>
+      <input class="width_full" type="email" name="email" placeholder="E-mail...">
+
+      <label for="number"></label>
+      <input type="number" name="number" placeholder="Nummer...">
+
+      <label for="age"></label>
+      <input type="number" name="age" placeholder="Leeftijd...">
+      <hr>
+      <label class="date_label" for="date">Geboortedatum:</label>
+      <input class="date" type="date" name="date">
+
+      <label for="gender">Geslacht:</label>
+      <div class="gender">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+
+      <label for="cuisine">Favoriete keuken:</label>
+      <div class="gender">
+        <input type="checkbox" name="cuisine" value="frans"> Frans
+        <input type="checkbox" name="cuisine" value="italiaans"> Italiaans
+        <input type="checkbox" name="cuisine" value="spaans"> Spaans
+        <input type="checkbox" name="cuisine" value="arabisch"> Arabisch
+      </div>
+
+      <label for="color">Favoriete kleur:</label>
+      <input class="width_half" type="color" name="color">
+
+      <label for="textarea">Biografie</label>
+      <textarea class="width_half" rows="8" cols="5" placeholder="Vertel wat over jezelf..."></textarea>
+
+      <label for="file">Upload bestand:</label>
+      <input class="width_half" type="file" name="file">
+
+      <label for="url">Jouw recepten website:</label>
+      <input class="width_half" type="url" name="url" placeholder="https://...">
+
+      <label for="reset"></label>
+      <input class="width_25" type="reset" name="reset" onclick="alert(`Formulier gereset.`)" value="Reset">
+
+      <label for="submit"></label>
+      <input class="width_25" type="submit" name="submit" onclick="alert(`Dankjewel!`)" value="Verstuur">
+
+    </form>
+  </div>
+
+</body>
+
+</html>

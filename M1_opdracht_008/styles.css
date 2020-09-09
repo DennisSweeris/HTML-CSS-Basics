@@ -1,0 +1,185 @@
+body {
+    background-image: url(food.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(237, 246, 253);  
+    background-size: auto; 
+}
+
+.recept_background {
+    background-image: url(wood.jpg);    
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    border: 10px outset rgb(54, 33, 33);
+    margin: 20px auto;
+    width: 50%;
+    padding: 10px; 
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;          
+}
+
+hr {
+    width: 50%;
+    margin-right: 75%;    
+    padding: 0px 5px;
+    border: 1px solid rgb(0, 0, 0); 
+}
+
+.container {
+    border-radius: 5px;
+    border: 5px outset rgb(54, 33, 33);
+    background-color: rgba(63, 47, 37, 0.950);
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form > label {
+    display: block;
+    padding: 5px 0px;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.width_full {
+    width: 100%;
+}
+
+.width_half {
+    width: 50%;
+}
+
+.width_25 {
+    width: 25%;
+}
+
+.gender {
+    font-variant: normal;
+    font-family: Arial, Helvetica, sans-serif;  
+    color: rgb(255, 255, 255); 
+}
+
+form > input, textarea {
+    padding: 5px 0px;    
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+    font-variant: normal;
+    font-family: Arial, Helvetica, sans-serif;      
+}
+
+form > input:focus {
+    background: rgb(255, 255, 255);
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+form > input::placeholder{
+    color: rgb(0, 0, 0, 0.500);
+    padding: 0 5px;
+}
+
+form > textarea:focus {
+    background: rgb(255, 255, 255);
+}
+
+.date {
+    width: 29%;
+    padding: 5px 5px;
+}
+
+textarea {
+    resize: none;
+    padding: 5px 5px;
+}
+
+input[type=checkbox], input[type=radio]{
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 100, 0);
+    cursor: pointer;
+}
+
+/* --------------------- Arrow Removal --------------------- */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* --------------------- Media Queries --------------------- */
+@media (max-width: 1024px) {
+    body {
+        background-color: orange;
+        background-size: cover;
+    }
+
+    .recept_background {
+        object-fit: cover;
+}
+
+    h1 {
+        font-size: 1.5em;  
+        text-align: center;      
+        padding: 0px;
+        margin: 0px;  
+}
+    form * {
+        align-content: center;
+    }
+    textarea {
+        padding: 0px 5px;
+    }
+
+    .date {
+        width: 50%;
+    }
+
+    .width_half {
+        width: 50%;        
+}
+    .width_25 {
+        width: 25%;
+}
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: blue;
+        background-size: cover;
+    }
+
+    .recept_background {
+        object-fit: cover;
+    }
+
+    .date {
+        width: 75%;
+        }
+
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;   
+    }
+
+    .width_25 {
+        width: 25%;
+    }
+}
+
